@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bundle.js" defer></script>
+</head>
+<body>
+    <div id="form">
+
+        <p>Nama : <input type = "text" id = "txtNama"> </input></p>
+        <p>Umur :  <input type = "text" id = "txtUmur"> </input> </p>
+        <p>
+            <label>Gender:</label>
+            <select name="gender">
+                <option value="pria">pria</option>
+                <option value="wanita">wanita</option>
+            </select>
+        </p>
+        <p>
+            
+            <label>Status:</label>
+            <select name="status">
+                <option value="single">single</option>
+                <option value="maried">maried</option>
+            </select>
+        </p>
+        <p>Find : <input type = "text" id = "txtfind"> </input> 
+        <input type="button" value="Tambah" id="btnSend" onclick="bikinlist(document.getElementById('txtfind'),document.getElementById('txtNama'),document.getElementById('txtUmur'),document.getElementById('txtgender'),document.getElementById('txtstatus'))" ></p>
+        
+
+    </div>
+    <div id = "root"></div>
+</body>
+</html>
